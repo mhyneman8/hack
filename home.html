@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- add font here -->
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="rewards">
+      <a href="rewards.html">My rewards</a>
+    </div>
+    <div class="menu">
+      <a href="business-home.html">
+        Switch to Businesss Account
+      </a>
+      <a href="settings.html">
+        Settings
+      </a>
+    </div>
+
+    <form >
+      <label for="business-type">What are you looking for?</label>
+      <select id="business-type" name="business-type">
+        <option value="restaurants">Restaurants</option>
+        <option value="hardware">Hardware Store</option>
+        <option value="retail">Retail</option>
+        <option value="explore">Explore my area</option>
+      </select>
+
+      <select id="radius" name="radius">
+        <option value="0.5">0.5 Miles</option>
+        <option value="1">1 miles</option>
+        <option value="5">5 miles</option>
+        <option value="10">10 miles</option>
+      </select>
+
+      <input type="text" name="location" value="location" placeholder="zipcode or address">
+    </form>
+
+    <a href="locations.html" class="button">Find</a>
+
+
+    </main>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
