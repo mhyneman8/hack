@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  .first-checkbox,.second-checkbox{
+border:1px solid #D3D3D3;
+border-radius:5px;
+padding:5px;
+}
+.checkbox-container{
+width:80%;
+display:flex;
+justify-content:space-around;
+padding:20px;
+border:1px solid #C0C0C0;
+border-radius:5px;
+}
+.active{
+border:1px solid black;
+border-radius:5px;
+padding:5px;
+}
+  </style>
+
+  <script type="text/javascript">
+  document.querySelector(".first-checkbox").addEventListener('click', function(){
+document.querySelector(".first-checkbox").classList.add("active");
+document.querySelector(".second-checkbox").classList.remove("active");
+})
+document.querySelector(".second-checkbox").addEventListener('click', function(){
+document.querySelector(".second-checkbox").classList.add("active");
+document.querySelector(".first-checkbox").classList.remove("active");
+})
+  </script>
+
+</head>
+<body>
+  <div class="checkbox-container">
+  <label for="seeker" class="first-checkbox">
+      I am a Job Seeker
+      <input type="radio" id="seeker" name="designation">
+  </label>
+
+  <label for="employer" class="second-checkbox">
+      I am an Employer
+      <input type="radio" id="employer" name="designation">
+  </label>
+  </div>
+
+</body>
+</html>

@@ -1,44 +1,172 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+  <title>Business Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <title>Reviews</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <img src="img/logo.svg" alt="logo" class="logo">
+  <img src="https://via.placeholder.com/30" alt="menu" class="menu">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <h2>Active Offers</h2>
 
-    <!-- add font here -->
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="offers" data-toggle="modal" data-target="#myModal">
+  Business Offer 1
+  </button>
 
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
+  <!-- Modal -->
+  <div class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-  <body>
-
-    <div class="menu">
-      <a href="#">
-        Add pictures
-      </a>
-      <a href="#">
-        Update info
-      </a>
-      <a href="#">
-        Meet other businesses
-      </a>
-      <a href="#">
-        Messages
-      </a>
-      <a href="#">
-        Create Reward cards
-      </a>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Offer Name</h4>
+        </div>
+        <div class="modal-body">
+          <p>Performance</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
 
     </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="offers" data-toggle="modal" data-target="#myModal">
+  Business Offer 2
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Offer Title 2</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
 
+<h2>Partnership Requests</h2>
+<!-- turn into model to see parner request: why partner, what they have -->
+<!-- if accept show else show -->
+<!-- Modal -->
 
-    <script src="js/scripts.js"></script>
-  </body>
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="offers" data-toggle="modal" data-target="#myModal">
+  Business Offer 1
+  </button>
 
+  <!-- Modal -->
+  <div class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Offer Name</h4>
+        </div>
+        <div class="modal-body">
+          <p>Performance</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="offers" data-toggle="modal" data-target="#myModal">
+  Business Offer 1
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Offer Name</h4>
+        </div>
+        <div class="modal-body">
+          <p>Performance</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="nav">
+    <a href="business-home.html" >
+      <img src="https://via.placeholder.com/30" class="nav" alt="">
+      <h4 class="footer-text">Home</h4>
+    </a>
+  </div>
+  <div class="nav">
+    <a href="partner.html" >
+      <img src="https://via.placeholder.com/30" class="nav" alt="">
+      <h4 class="footer-text">Partner</h4>
+    </a>
+  </div>
+
+  <div class="nav">
+    <a href="messages.html" >
+      <img src="https://via.placeholder.com/30" class="nav" alt="">
+      <h4 class="footer-text">Messages</h4>
+    </a>
+  </div>
+
+  <div class="nav">
+    <a href="#">
+      <img src="https://via.placeholder.com/30" class="nav" alt="">
+      <h4 class="footer-text">Offers</h4>
+    </a>
+  </div>
+</footer>
+
+</body>
 </html>

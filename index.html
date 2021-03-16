@@ -12,33 +12,57 @@
     <!-- add font here -->
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <main id="main-holder">
-      <h1 id="login-header">Login</h1>
 
-      <div id="login-error-msg-holder">
-        <p id="login-error-msg">Invalid Username<span id="error-msg-second-line"> and/or Password</span></p>
+    <img src="img/logo.svg" alt="logo" class="signin-logo">
+
+    <form class='register-form'>
+
+      <div class='form'>
+        <div class="label">
+          <label for='email' class="label">E-mail</label><br>
+        </div>
+        <input class="input" type="text" id='email' name="email">
       </div>
 
-      <form id="login-form">
-        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <div class='form'>
+        <div class="label">
+          <label for='password' class="label">Password</label><br>
+        </div>
+        <input class="input" id='password' type='password'>
+      </div>
 
-      </form>
-      <form>
-        <input type="radio" id="business" name="type" value="business">
-        <label for="business">Business</label>
-        <input type="radio" id="consumer" name="type" value="consumer">
-        <label for="consumer">Consumer</label>
-      </form>
-        <form action="home.html">
-          <input type="submit" value="Login" id="login-form-submit"/>
-        </form>
-    
+      <a href="business-home.html" class="button">Sign in</a>
 
-    </main>
+      <p class="or">or</p>
+
+      <div class="social">
+        <a href="#" class="social">
+          <img src="https://via.placeholder.com/40" alt="">
+        </a>
+
+        <a href="#" class="social">
+          <img src="https://via.placeholder.com/40" alt="">
+        </a>
+
+        <a href="#" class="social">
+          <img src="https://via.placeholder.com/40" alt="">
+        </a>
+      </div> <!-- end of social -->
+
+      <a href="business-home.html" class="button">
+        Sign up
+      </a>
+
+    </form>
+
+
+
+
+
+
     <script src="js/scripts.js"></script>
   </body>
 
