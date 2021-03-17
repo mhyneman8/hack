@@ -141,6 +141,7 @@ style: 'mapbox://styles/mapbox/streets-v11'
 });
 
 // profile2 radio outline on click
+
 document.querySelector(".first-checkbox").addEventListener('click', function() {
   document.querySelector(".first-checkbox").classList.add("active");
   document.querySelector(".second-checkbox").classList.remove("active");
