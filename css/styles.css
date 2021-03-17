@@ -105,9 +105,11 @@ h4 {
   border-radius: 20px;
   text-align: center;
   height: 35px;
-  width: 130px;
+  width: 230px;
   border: 1px solid black;
   justify-content: center;
+  background-color: black;
+  color: white;
 }
 .or {
   text-align: center;
@@ -121,6 +123,10 @@ h4 {
   max-width: 60%;
 }
 
+.img {
+  width: 150px;
+}
+
 .who {
   margin-top: 150px;
 }
@@ -130,6 +136,7 @@ h4 {
   border-radius: 20px;
   padding: 25px;
   font-size: 20px;
+
 }
 input[type="radio"] {
   visibility: hidden;
@@ -145,8 +152,7 @@ input[type="radio"] {
   border: 1px solid white;
   border-radius: 20px
 }
-.first-checkbox.active,
-.second-checkbox.active {
+input[type="radio"]:checked+label {
   border: 1px solid black;
   border-radius: 20px;
   padding: 5px;
