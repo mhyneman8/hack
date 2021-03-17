@@ -2,23 +2,15 @@
   box-sizing: border-box;
 }
 
-html {
-
-}
-
 body {
-
+  max-width: 360px;
 }
-
 a {
   text-decoration: none;
 }
 
-a hover {
-  background-color: pink;
-}
-
 h2 {
+  display: block;
   padding-left: 10px;
   margin-bottom: 5px;
   margin-top: 8px;
@@ -81,7 +73,7 @@ h4 {
 
 .menu {
   float: right;
-  padding: 15px;
+  padding: 25px;
 }
 
 .button-black {
@@ -124,7 +116,7 @@ h4 {
 }
 
 .img {
-  width: 150px;
+  width: 50px;
 }
 
 .who {
@@ -159,12 +151,13 @@ input[type="radio"]:checked+label {
 }
 .container {
   text-align: center;
+  max-width: 360px;
 }
 .input-wrapper {
   margin: 10px auto;
   border: 2px solid black;
   color: black;
-  min-width: 95%;
+  max-width: 320px;
   height: auto;
   position: relative;
   display: grid;
@@ -177,8 +170,19 @@ input[type="radio"]:checked+label {
   padding-top: 10px;
 }
 
-label {
+.partner_img {
+  z-index: -1;
+}
 
+.request {
+  padding-left: 20px;
+  margin: 10px auto;
+}
+
+.textarea {
+  border: 1px solid black;
+  margin-left: 20px;
+  border-radius: 3px;
 }
 
 .error-message {
@@ -233,7 +237,7 @@ label {
 }
 
 .offers {
-  width: 90%;
+  width: 250px;
   height: 40px;
   margin: 10px;
 }
@@ -255,10 +259,11 @@ label {
   margin-left: 10px;
   max-width: 170px;
 }
-#edit {
+.edit {
   float: right;
   top: 0;
   padding-right: 15px;
+  font-size: 20px;
 }
 
 .new {
@@ -266,6 +271,157 @@ label {
   text-align: right;
   margin: 25px;
   font-size: 18px;
+}
+
+.reward-head {
+  margin-top: 0;
+}
+
+.rewards {
+  background-color: lightgrey;
+  color: black;
+  display: block;
+  height: 55px;
+  margin: 15px;
+}
+.rewards h3 {
+  text-align: left;
+  display: inline;
+  padding: 15px;
+  padding-top: 5px;
+}
+.rewards p {
+  float: right;
+  display: inline;
+  text-align: right;
+  padding-top: 5px;
+}
+
+.rewards-card {
+  background-color: lightgrey;
+  margin: 20px;
+  padding: 8px;
+}
+.rewards-card h3 {
+  padding: 0;
+  margin: 0;
+}
+.para {
+  max-width: 250px;
+  padding-left: 10px;
+}
+.para h3 {
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.blue {
+  background-color: blue;
+  z-index: 9999;
+}
+.green {
+  background-color: green;
+}
+
+.rewards-claim {
+  background-color: darkgrey;
+  text-align: center;
+  height: 250px;
+}
+
+#claimh3 {
+  display: inline-block;
+}
+.button-empty {
+  background-color: white;
+  color: black;
+  margin: 5px auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+  width: 170px;
+}
+
+.claim {
+  margin-bottom: 10px;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
+  margin: 10px 40px;
+  grid-gap: 5px;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.rewards-grid__item {
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.rewards-card h3 {
+  text-align: left;
+}
+
+.part {
+  display: inline-block;
+}
+.dot {
+  min-width: 10px;
+  border-radius: 50px;
+  background-color: green;
+  z-index: 999;
+}
+
+.tasks {
+  display: inline;
+  margin-left: 90px;
+}
+
+.card {
+  background-color: lightgrey;
+  margin: 10px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.card span {
+  font-weight: bold;
+}
+.card h3 {
+  font-weight: bold;
+}
+
+.create {
+  background-color: lightgrey;
+  padding: 20px;
+
+}
+
+.create input {
+  display: block;
+  margin: 20px;
+}
+
+.next {
+
+}
+
+.button2 {
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightgrey;
+  color: black;
+  width: 150px;
+  margin: 40px auto;
+  height: 40px;
+  padding: 10px;
 }
 
 .florist-header {
@@ -276,24 +432,57 @@ label {
   position: relative;
 }
 
-.img-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
-  margin: 10px auto;
-  text-align: center;
-  max-width: 340px;
+
+  .messages {
+
+    position: relative;
+    margin-top: 70px;
+  }
+  .mess_item {
+    background-color: lightgrey;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: left;
+
+    width: 360px;
+    height: 75px;
+  }
+  .grid_item p {
+    margin-left: 70px;
+  }
+.day {
+  display: inline;
+  text-align: right;
+  margin-right: 20px;
 }
 
-.hours-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  padding: 8px;
+.mess-img {
+  border-radius: 50px;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-right: 15px;
 }
-.hours-grid__item p {
-  margin: 0;
-  padding: 0;
-}
+
+  .img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 340px;
+  }
+
+  .hours-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 8px;
+  }
+  .hours-grid__item p {
+    margin: 0;
+    padding: 0;
+  }
 
 .hours {
   width: 100%;
@@ -317,15 +506,79 @@ label {
   padding-top: 4px;
   justify-content: space-around;
 }
+
+/* device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  z-index: 150;
+}
+
+/* horizontal line on the top of device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+  z-index: 150;
+}
+
+/* circle on the bottom of device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -13%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+  z-index: 150;
+}
+
+/* screen (or content) of the device */
+.smartphone {
+  width: 370px;
+  height: 640px;
+  background: white;
+  z-index: 1000;
+}
+
+.content {
+  max-width: 340px;
+  height: 530px;
+  overflow: scroll;
+}
+.spacer {
+  min-height: 70px;
+}
+
 .footer {
   clear: both;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-direction: column;
   position: fixed;
-  bottom: 0;
+  bottom: 70px;
+  margin: 0 auto;
   background-color: lightgrey;
   text-align: center;
-  width: 100%;
-  max-height: 75px;
+  width: 91.5%;
+  max-height: 70px;
+  font-size: 15px;
+  z-index: 100;
 }

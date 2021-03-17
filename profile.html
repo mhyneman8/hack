@@ -9,6 +9,68 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
+    <style>
+    /* device with borders */
+    .smartphone {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      margin: auto;
+      border: 16px black solid;
+      border-top-width: 60px;
+      border-bottom-width: 60px;
+      border-radius: 36px;
+      z-index: 150;
+    }
+
+    /* horizontal line on the top of device */
+    .smartphone:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 5px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 10px;
+      z-index: 150;
+    }
+
+    /* circle on the bottom of device */
+    .smartphone:after {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: 50%;
+      bottom: -13%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 50%;
+      z-index: 150;
+    }
+
+    /* screen (or content) of the device */
+    .smartphone {
+      width: 370px;
+      height: 640px;
+      background: white;
+      z-index: 1000;
+    }
+
+    .content {
+      max-width: 340px;
+      height: 530px;
+      overflow: scroll;
+    }
+    .spacer {
+      min-height: 70px;
+    }
+    </style>
+
     <!-- add font here -->
 
     <!-- css -->
@@ -16,85 +78,88 @@
   </head>
 
   <body>
-    <div class="page-container">
-      <img src="https://via.placeholder.com/30" alt="logo" class="logo">
-      <img src="https://via.placeholder.com/30" alt="menu" class="menu">
+    <div class="smartphone">
+      <div class="content">
+        <div class="page-container">
+          <img src="https://via.placeholder.com/30" alt="logo" class="logo">
+          <img src="https://via.placeholder.com/30" alt="menu" class="menu">
 
-      <div>
-        <h2>Partnerships</h2>
-      </div>
-
-      <div class="florist-header">
-        <img src="https://via.placeholder.com/100" class="florist-img-top" alt="">
-        <div class="florist-info">
-          <h4>Central Squre Florist</h4>
-          <p>Offers arrangements and potted plants for delivery.</p>
-        </div>
-        <p id="edit">Edit</p>
-      </div>
-
-      <div class="hours">
-        <h5>Hours of Operation</h5>
-        <div class="hours-grid">
-          <div class="hours-grid__item">
-            <p>Mon</p>
-            <p>8a-5p</p>
+          <div>
+            <h2>Partnerships</h2>
           </div>
-          <div class="hours-grid__item">
-            <p>Tues</p>
-            <p>8a-5p</p>
+
+          <div class="florist-header">
+            <img src="https://via.placeholder.com/100" class="florist-img-top" alt="">
+            <div class="florist-info">
+              <h4>Central Squre Florist</h4>
+              <p>Offers arrangements and potted plants for delivery.</p>
+            </div>
+            <p id="edit">Edit</p>
           </div>
-          <div class="hours-grid__item">
-            <p>Wed</p>
-            <p>8a-5p</p>
+
+          <div class="hours">
+            <h5>Hours of Operation</h5>
+            <div class="hours-grid">
+              <div class="hours-grid__item">
+                <p>Mon</p>
+                <p>8a-5p</p>
+              </div>
+              <div class="hours-grid__item">
+                <p>Tues</p>
+                <p>8a-5p</p>
+              </div>
+              <div class="hours-grid__item">
+                <p>Wed</p>
+                <p>8a-5p</p>
+              </div>
+              <div class="hours-grid__item">
+                <p>Thur</p>
+                <p>8a-5p</p>
+              </div>
+              <div class="hours-grid__item">
+                <p>Fri</p>
+                <p>8a-5p</p>
+              </div>
+              <div class="hours-grid__item">
+                <p>Sat</p>
+                <p>9a-5p</p>
+              </div>
+              <div class="hours-grid__item">
+                <p>Sun</p>
+                <p>9a-5p</p>
+              </div>
+            </div>
           </div>
-          <div class="hours-grid__item">
-            <p>Thur</p>
-            <p>8a-5p</p>
+
+          <a href="request.html" class="button-black">Send Partnership Request</a>
+          <div class="img-grid">
+            <div class="img-grid__item">
+              <img src="https://via.placeholder.com/100" alt="">
+            </div>
+
+            <div class="img-grid__item">
+              <img src="https://via.placeholder.com/100" alt="">
+            </div>
+
+            <div class="img-grid__item">
+              <img src="https://via.placeholder.com/100" alt="">
+            </div>
+
+            <div class="img-grid__item">
+              <img src="https://via.placeholder.com/100" alt="">
+            </div>
+
+            <div class="img-grid__item">
+              <img src="https://via.placeholder.com/100" alt="">
+            </div>
+
+            <div class="img-grid__item">
+              <img src="https://via.placeholder.com/100" alt="">
+            </div>
           </div>
-          <div class="hours-grid__item">
-            <p>Fri</p>
-            <p>8a-5p</p>
-          </div>
-          <div class="hours-grid__item">
-            <p>Sat</p>
-            <p>9a-5p</p>
-          </div>
-          <div class="hours-grid__item">
-            <p>Sun</p>
-            <p>9a-5p</p>
-          </div>
-        </div>
-      </div>
 
-      <a href="request.html" class="button-black">Send Partnership Request</a>
-      <div class="img-grid">
-        <div class="img-grid__item">
-          <img src="https://via.placeholder.com/100" alt="">
-        </div>
-
-        <div class="img-grid__item">
-          <img src="https://via.placeholder.com/100" alt="">
-        </div>
-
-        <div class="img-grid__item">
-          <img src="https://via.placeholder.com/100" alt="">
-        </div>
-
-        <div class="img-grid__item">
-          <img src="https://via.placeholder.com/100" alt="">
-        </div>
-
-        <div class="img-grid__item">
-          <img src="https://via.placeholder.com/100" alt="">
-        </div>
-
-        <div class="img-grid__item">
-          <img src="https://via.placeholder.com/100" alt="">
-        </div>
-      </div>
-</div> <!-- end of page-container -->
-
+          <div class="spacer"></div>
+    </div> <!-- end of page-container -->
 
 <footer class="footer">
   <div class="nav">
@@ -125,10 +190,8 @@
   </div>
 </footer>
 
-
-
-
-
+  </div>
+</div>
     <script src="js/scripts.js"></script>
   </body>
 

@@ -6,50 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-  .first-checkbox,.second-checkbox{
-border:1px solid #D3D3D3;
-border-radius:5px;
-padding:5px;
-}
-.checkbox-container{
-width:80%;
-display:flex;
-justify-content:space-around;
-padding:20px;
-border:1px solid #C0C0C0;
-border-radius:5px;
-}
-.active{
-border:1px solid black;
-border-radius:5px;
-padding:5px;
-}
+  /* device with borders */
+  .smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+
+  /* horizontal line on the top of device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+
+  /* circle on the bottom of device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position:absolute;
+    left: 50%;
+    bottom: -65%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+
+  /* screen (or content) of the device */
+  .smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+  }
+
   </style>
 
-  <script type="text/javascript">
-  document.querySelector(".first-checkbox").addEventListener('click', function(){
-document.querySelector(".first-checkbox").classList.add("active");
-document.querySelector(".second-checkbox").classList.remove("active");
-})
-document.querySelector(".second-checkbox").addEventListener('click', function(){
-document.querySelector(".second-checkbox").classList.add("active");
-document.querySelector(".first-checkbox").classList.remove("active");
-})
-  </script>
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-  <div class="checkbox-container">
-  <label for="seeker" class="first-checkbox">
-      I am a Job Seeker
-      <input type="radio" id="seeker" name="designation">
-  </label>
+  <div class="smartphone">
+    <div class="content">
+      <img src="img/logo.svg" alt="logo" class="logo">
+      <img src="https://via.placeholder.com/30" alt="menu" class="menu">
 
-  <label for="employer" class="second-checkbox">
-      I am an Employer
-      <input type="radio" id="employer" name="designation">
-  </label>
+
+          <h2>Partnerships</h2>
+
+          <div class="new">
+            <a href="search.html" id="new">+ Add New</a>
+          </div>
+
+          <div class="input-wrapper">
+            <img src="https://via.placeholder.com/100" alt="">
+
+              <p><span>Sofra Bakery</span><br><br>
+              1 Belmont St, <br>
+              Cambridge, MA 02138</p>
+          </div>
+
+          <div class="input-wrapper">
+            <img src="#" alt="">
+            <p><span>Burdick Chocolates</span><br><br>
+            52 Brattle St, <br>Cambridge, MA 02138</p>
+          </div>
+
+          <div class="input-wrapper">
+            <img src="#" alt="">
+            <p><span>EHChocolatier</span><br><br>
+            145 Huron Ave, <br>Cambridge, MA 02138</p>
+          </div>
+
+
+              <footer class="footer">
+                <div class="nav">
+                  <a href="business-home.html" >
+                    <img src="https://via.placeholder.com/30" class="nav" alt="">
+                    <h4 class="footer-text">Home</h4>
+                  </a>
+                </div>
+
+                <div class="nav">
+                  <a href="partner.html" >
+                    <img src="https://via.placeholder.com/30" class="nav" alt="">
+                    <h4 class="footer-text">Partner</h4>
+                  </a>
+                </div>
+
+                <div class="nav">
+                  <a href="messages.html" >
+                    <img src="https://via.placeholder.com/30" class="nav" alt="">
+                    <h4 class="footer-text">Messages</h4>
+                  </a>
+                </div>
+
+                <div class="nav">
+                  <a href="#">
+                    <img src="https://via.placeholder.com/30" class="nav" alt="">
+                    <h4 class="footer-text">Offers</h4>
+                  </a>
+                </div>
+              </footer>
+
   </div>
-
+</div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

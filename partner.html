@@ -11,11 +11,77 @@
 
     <!-- add font here -->
 
+    <style>
+    /* device with borders */
+    .smartphone {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      margin: auto;
+      border: 16px black solid;
+      border-top-width: 60px;
+      border-bottom-width: 60px;
+      border-radius: 36px;
+      z-index: 150;
+    }
+
+    /* horizontal line on the top of device */
+    .smartphone:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 5px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 10px;
+      z-index: 150;
+    }
+
+    /* circle on the bottom of device */
+    .smartphone:after {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: 50%;
+      bottom: -13%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 50%;
+      z-index: 150;
+    }
+
+    /* screen (or content) of the device */
+    .smartphone {
+      width: 370px;
+      height: 640px;
+      background: white;
+      z-index: 1000;
+    }
+
+    .content {
+      max-width: 340px;
+      height: 530px;
+      overflow: scroll;
+    }
+    .spacer {
+      min-height: 70px;
+    }
+
+    </style>
+
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
   <body>
+    <div class="smartphone">
+      <div class="content">
+
     <img src="img/logo.svg" alt="logo" class="logo">
     <img src="https://via.placeholder.com/30" alt="menu" class="menu">
 
@@ -26,25 +92,32 @@
       <a href="search.html" id="new">+ Add New</a>
     </div>
 
-    <div class="input-wrapper">
-      <img src="https://via.placeholder.com/100" alt="">
-
-        <p><span>Sofra Bakery</span><br><br>
-        1 Belmont St, <br>
-        Cambridge, MA 02138</p>
-
-    </div>
-    <div class="input-wrapper">
-      <img src="#" alt="">
-      <p><span>Burdick Chocolates</span><br><br>
-      52 Brattle St, <br>Cambridge, MA 02138</p>
+    <div>
+      <a href="profile.html" class="input-wrapper">
+        <img src="https://via.placeholder.com/100" class="partner_img" alt="">
+          <p><span>Sofra Bakery</span><br><br>
+          1 Belmont St, <br>
+          Cambridge, MA 02138</p>
+      </a>
     </div>
 
-    <div class="input-wrapper">
-      <img src="#" alt="">
-      <p><span>EHChocolatier</span><br><br>
-      145 Huron Ave, <br>Cambridge, MA 02138</p>
+    <div>
+      <a href="profile.html" class="input-wrapper">
+        <img src="https://via.placeholder.com/100" class="partner_img" alt="">
+        <p><span>Burdick Chocolates</span><br><br>
+        52 Brattle St, <br>Cambridge, MA 02138</p>
+      </a>
     </div>
+
+    <div>
+      <a href="profile.html" class="input-wrapper">
+        <img src="https://via.placeholder.com/100" class="partner_img" alt="">
+        <p><span>EHChocolatier</span><br><br>
+        145 Huron Ave, <br>Cambridge, MA 02138</p>
+      </a>
+    </div>
+
+    <div class="spacer"></div>
 
 
     <footer class="footer">
@@ -78,6 +151,8 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+  </div>
+</div>
   </body>
 
 </html>

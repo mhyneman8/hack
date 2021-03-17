@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Request</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <style>
+    /* device with borders */
+    .smartphone {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      margin: auto;
+      border: 16px black solid;
+      border-top-width: 60px;
+      border-bottom-width: 60px;
+      border-radius: 36px;
+      z-index: 150;
+    }
+
+    /* horizontal line on the top of device */
+    .smartphone:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 5px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 10px;
+      z-index: 150;
+    }
+
+    /* circle on the bottom of device */
+    .smartphone:after {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: 50%;
+      bottom: -13%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 50%;
+      z-index: 150;
+    }
+
+    /* screen (or content) of the device */
+    .smartphone {
+      width: 370px;
+      height: 640px;
+      background: white;
+      z-index: 1000;
+    }
+
+    .content {
+      max-width: 340px;
+      height: 530px;
+      overflow: scroll;
+    }
+    .spacer {
+      min-height: 70px;
+    }
+
+    </style>
+
+    <!-- add font here -->
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="smartphone">
+      <div class="content">
+        <img src="https://via.placeholder.com/30" alt="logo" class="logo">
+        <img src="https://via.placeholder.com/30" alt="menu" class="menu">
+
+
+        <h2>Partnerships</h2>
+
+        <div class="">
+          <h3>Inquiry Request</h3>
+          <p class="request">Why do you want to partner with us?</p>
+          <textarea name="name" class="textarea" rows="3" cols="35"></textarea>
+          <p class="request">What do you have to offer?</p>
+          <textarea name="name" class="textarea" rows="3" cols="35"></textarea>
+          <p class="request">How soon are you ready to partner?</p>
+          <input type="text" class="textarea" name="time" value="date" placeholder="date">
+          <label for="now" >Immediately</label>
+          <input type="radio" name="now" value="now" id="now">
+        </div>
+
+        <a href="request.html" class="button">Send</a>
+
+        <div class="spacer"></div>
+        <footer class="footer">
+          <div class="nav">
+            <a href="business-home.html" >
+              <img src="https://via.placeholder.com/30" class="nav" alt="">
+              <h4 class="footer-text">Home</h4>
+            </a>
+          </div>
+
+          <div class="nav">
+            <a href="partner.html" >
+              <img src="https://via.placeholder.com/30" class="nav" alt="">
+              <h4 class="footer-text">Partner</h4>
+            </a>
+          </div>
+
+          <div class="nav">
+            <a href="messages.html" >
+              <img src="https://via.placeholder.com/30" class="nav" alt="">
+              <h4 class="footer-text">Messages</h4>
+            </a>
+          </div>
+
+          <div class="nav">
+            <a href="#">
+              <img src="https://via.placeholder.com/30" class="nav" alt="">
+              <h4 class="footer-text">Offers</h4>
+            </a>
+          </div>
+        </footer>
+    </div>
+  </div>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
