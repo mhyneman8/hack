@@ -24,26 +24,6 @@ h4 {
   padding-top: 5px;
   margin: 5px;
 }
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 40px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 20px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-
-}
 
 .signin-logo {
   text-align: center;
@@ -69,14 +49,9 @@ h4 {
   margin: 0 auto;
   padding: 5px;
 }
-
-.register-form {
-  margin: 130px auto;
-}
-
 .label {
   padding-bottom: 5px;
-  padding-left: 40px;
+  padding-left: 20px;
   text-align: left;
   display: block;
   min-width: 75px;
@@ -89,22 +64,6 @@ h4 {
   padding-bottom: 5px;
   margin: 0 auto;
   text-align: left;
-}
-
-.form-input {
-  display: block;
-  padding: 10px;
-  border: 0.5px solid black;
-  height: 10px;
-
-  margin-left: 40px;
-  margin-bottom: 10px;
-}
-
-.upload {
-  text-align: center;
-  margin: 50px;
-  padding-top: 10px;
 }
 
 .logo {
@@ -190,10 +149,10 @@ input[type="radio"]:checked+label {
   border-radius: 20px;
   padding: 5px;
 }
-.container {
+/*.container {
   text-align: center;
   max-width: 360px;
-}
+} */
 .input-wrapper {
   margin: 10px auto;
   border: 2px solid black;
@@ -224,16 +183,6 @@ input[type="radio"]:checked+label {
   border: 1px solid black;
   margin-left: 20px;
   border-radius: 3px;
-}
-
-.map {
-  max-width: 300px;
-  text-align: center;
-  margin: 15px 10px;
-}
-.find {
-  text-align: right;
-  display: inline;
 }
 
 .error-message {
@@ -267,7 +216,7 @@ input[type="radio"]:checked+label {
   margin-bottom: 0;
 }
 
-#offer-container {
+/*#offer-container {
   display: none;
 }
 #offer-container.is-visible {
@@ -286,6 +235,7 @@ input[type="radio"]:checked+label {
   display: grid;
   text-align: center;
 }
+*/
 
 .offers {
   width: 250px;
@@ -366,6 +316,16 @@ input[type="radio"]:checked+label {
   margin: 5px auto;
 }
 
+.rewards-button {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.grey {
+  background: grey;
+}
+
 .blue {
   background-color: blue;
   z-index: 9999;
@@ -401,14 +361,13 @@ input[type="radio"]:checked+label {
   display: grid;
   grid-template-columns: 60px 60px 60px;
   grid-template-rows: 60px 60px 60px;
-  margin: 10px 40px;
+  margin: 20px 55px;
   grid-gap: 5px;
   font-size: 12px;
   padding: 15px;
 }
 
 .rewards-grid__item {
-  background-color: grey;
   color: white;
   padding: 5px;
   text-align: center;
@@ -536,7 +495,7 @@ input[type="radio"]:checked+label {
   }
 
 .hours {
-  width: 310px;
+  width: 100%;
   background-color: lightgrey;
   color: black;
   margin: 10px;
@@ -544,16 +503,6 @@ input[type="radio"]:checked+label {
 .hours h5 {
   padding-top: 15px;
   margin: 8px;
-}
-
-.business-grid {
-  display: grid;
-  margin: 20px 40px;
-  text-align: center;
-  max-width: 300px;
-}
-.business-grid__item {
-  text-align: center;
 }
 
 .footer-text {

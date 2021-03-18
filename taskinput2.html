@@ -38,20 +38,77 @@
           <div class="rewards-grid__item green">
             <p></p>
           </div>
-          <div class="rewards-grid__item">
+
+          <div class="rewards-grid__item grey">
             <p>Click to add</p>
           </div>
-          <div class="rewards-grid__item">
+
+          <div class="rewards-grid__item grey">
             <p>Click to add</p>
           </div>
-          <div class="rewards-grid__item">
-            <p>Click to add</p>
-          </div>
+
+
+
+            <div class="container">
+              <div class="rewards-grid__item grey">
+              <!-- Trigger the modal with a button -->
+                <button type="button" class="rewards-grid__item rewards-button" data-toggle="modal" data-target="#myModal6">
+                  Click to add
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal6" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+
         </div>
 
-          <p class="button">Submit</p>
 
+        <!-- modal to submit-->
+          <div class="container">
 
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="button" data-toggle="modal" data-target="#myModal5">Submit</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal5" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add description of task</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Task</p>
+                    <textarea name="name" rows="5" cols="30"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
 
 
 
