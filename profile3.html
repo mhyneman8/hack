@@ -15,49 +15,53 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
+    <div class="smartphone">
+      <div class="content">
 
-    <form>
+        <form class="register-form">
 
-      <div class='label'>
-        <label class="label" for='name'>
-          Name of Business
-          <input id='name'>
-        </label>
+          <div class=>
+            <label class="label" for='name'>
+              Name of Business
+            </label>
+            <input id='name' class="form-input">
+          </div>
+
+          <div class=>
+            <label class="label" for='address'>
+              Address
+            </label>
+            <input class="form-input"  id='address'>
+
+          </div>
+
+          <div class=''>
+            <label for='employees' class="label">Number of employees</label>
+            <select name="employees" class="form-input" id="employees">
+              <option value="5">1-5</option>
+              <option value="6">6-15</option>
+              <option value="30">16-30</option>
+              <option value="50">31-50</option>
+            </select>
+          </div>
+
+          <div class=''>
+            <label for='revenue' class="label">Annual revenue</label>
+            <select name="revenue" class="form-input" id="revenue">
+              <option value="">?</option>
+              <option value="">more than ?</option>
+              <option value="">even more ?</option>
+              <option value="">the most ?</option>
+            </select>
+          </div>
+
+          <a href="profile35.html" class="button">
+            Next
+          </a>
+
+        </form>
       </div>
-
-      <div class='label'>
-        <label class="label" for='address'>
-          Address
-          <input  id='address'>
-        </label>
-      </div>
-
-      <div class=''>
-        <label for='employees'>Number of employees</label>
-        <select name="employees" id="employees">
-          <option value="5">1-5</option>
-          <option value="6">6-15</option>
-          <option value="30">16-30</option>
-          <option value="50">31-50</option>
-        </select>
-      </div>
-
-      <div class=''>
-        <label for='revenue'>Annual revenue</label>
-        <select name="revenue" id="revenue">
-          <option value="">?</option>
-          <option value="">more than ?</option>
-          <option value="">even more ?</option>
-          <option value="">the most ?</option>
-        </select>
-      </div>
-
-      <a href="profile4.html">
-        Next
-      </a>
-
-    </form>
-
+    </div>
 
     <script src="js/scripts.js"></script>
   </body>

@@ -9,73 +9,14 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <style>
-    /* device with borders */
-    .smartphone {
-      position: relative;
-      width: 360px;
-      height: 640px;
-      margin: auto;
-      border: 16px black solid;
-      border-top-width: 60px;
-      border-bottom-width: 60px;
-      border-radius: 36px;
-      z-index: 150;
-    }
-
-    /* horizontal line on the top of device */
-    .smartphone:before {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 5px;
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #333;
-      border-radius: 10px;
-      z-index: 150;
-    }
-
-    /* circle on the bottom of device */
-    .smartphone:after {
-      content: '';
-      display: block;
-      width: 35px;
-      height: 35px;
-      position: absolute;
-      left: 50%;
-      bottom: -13%;
-      transform: translate(-50%, -50%);
-      background: #333;
-      border-radius: 50%;
-      z-index: 150;
-    }
-
-    /* screen (or content) of the device */
-    .smartphone {
-      width: 370px;
-      height: 640px;
-      background: white;
-      z-index: 1000;
-    }
-
-    .content {
-      max-width: 340px;
-      height: 530px;
-      overflow: scroll;
-    }
-    .spacer {
-      min-height: 70px;
-    }
-
-    </style>
-
     <!-- add font here -->
-
-    <!-- css -->
+  <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
@@ -99,7 +40,40 @@
           <input type="radio" name="now" value="now" id="now">
         </div>
 
-        <a href="request.html" class="button">Send</a>
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="offers" data-toggle="modal" data-target="#myModal4">
+            Send
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal4" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Success!</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="https://via.placeholder.com/50" alt="">
+                  <p>We sent your request to ABC Company</p>
+                  <p>Stay tuned for their response!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
 
         <div class="spacer"></div>
         <footer class="footer">
