@@ -13,9 +13,19 @@
 <body>
   <div class="smartphone">
     <div class="content">
-        <img src="img/logo.svg" alt="logo" class="logo">
-        <img src="https://via.placeholder.com/30" alt="menu" class="menu">
 
+        <img src="img/profile.png" alt="profile" class="profile">
+
+        <div class="dropdown">
+          <img src="img/settings.png" alt="settings" class="settings">
+          <div class="dropdown-content">
+            <a href="home.html">Switch to User</a>
+            <a href="#">Update Info</a>
+            <a href="#">Report User</a>
+            <a href="#">Help</a>
+            <a href="index.html">Logout</a>
+          </div> <!-- end of dropdown-content -->
+        </div><!-- end of dropdown -->
 
         <h2>Active Offers</h2>
 
@@ -30,16 +40,23 @@
           <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content" id="modal-body1">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Valentines Day</h4>
               </div>
               <div class="modal-body">
                 <p>Performance</p>
+                <img class="modal-img2" src="img/graph1.jpg" alt="performance graph">
+                <h5>Total times redeemed:</h5>
+                <p>26</p>
+                <h5>Expiration date:</h5>
+                <p>February 15, 2021</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="button" data-dismiss="modal">
+                  Close
+                </button>
               </div>
             </div>
 
@@ -59,19 +76,23 @@
           <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content" id="modal-body2">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Women's History Month</h4>
+                <h4 class="modal-title">
+                  Women's History Month
+                </h4>
               </div>
               <div class="modal-body">
                 <p>Performance</p>
-                <img src="img/graph.jpg" class="img" alt="">
+                <img src="img/graph1.jpg" class="modal-img2" alt="">
                 <p>Times Redeemed: 64</p>
                 <p>Exp on Feb 15, 2021</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="button" data-dismiss="modal">
+                  Close
+                </button>
               </div>
             </div>
 
@@ -97,21 +118,24 @@
           <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content" id="modal-body3">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Congrats! ABC Business wants to partner with you!</h4>
               </div>
-              <div class="modal-body">
+              <div class="modal-body" >
                 <h3>Why they want ot partner with you:</h3>
                 <p>We think our customers would go crazy over your candles.</p>
                 <h3>What they have to offer:</h3>
                 <p>We are getting a shipment of fresias in from Italy next month. We want to do a package deal with your praline clusters. Let us know if you're interested.</p>
 
-                <button type="button" name="button">
-                  Decline
-                </button>
-                <button type="button" name="button">
+
+                  <!-- Trigger the modal with a button -->
+                  <button type="button" class="button" data-toggle="modal" data-target="#myModal4">
+                    Decline
+                  </button>
+                  <!-- trigger modal5 -->
+                <button type="button" class="button" name="button" data-toggle="modal" data-target="#myModal5">
                   Accept
                 </button>
                 <h6>(psst. You can always change your mind later.)</h6>
@@ -119,12 +143,11 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
-            </div>
+            </div> <!-- end of modal content -->
 
-          </div>
-        </div>
-
-      </div>
+          </div> <!-- end of modal dialogue -->
+        </div> <!-- end of modal fade -->
+      </div> <!-- end of container -->
 
 
       <footer class="footer">
@@ -155,8 +178,59 @@
           </a>
         </div>
       </footer>
+  </div> <!-- end of content -->
+</div> <!-- end of smartphone -->
+
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content" id="modal-body4">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">That's ok!</h4>
+        </div>
+        <div class="modal-body" >
+
+          <p>We'll let them know that now's not the right time.</p>
+
+        <div class="modal-footer">
+          <a href="business-home.html" class="button">
+            Close
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
-  
+</div> <!-- end of modal fade -->
+
+<!-- Modal 5 -->
+<div class="modal fade" id="myModal5" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="modal-body5">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Congrats! You are now partnered with Brattle Square Florist.</h4>
+      </div>
+      <div class="modal-body" >
+        <img class="modal-img" src="img/check.png" alt="check mark">
+        <p>Message them to start the converstation</p>
+        <a href="messages.html" class="button">Message</a>
+      <div class="modal-footer">
+        <a href="business-home.html" class="button">
+          Close
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div> <!-- end of modal fade -->
+
 </body>
 </html>

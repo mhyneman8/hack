@@ -24,6 +24,27 @@ h4 {
   padding-top: 5px;
   margin: 5px;
 }
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .signin-logo {
   text-align: center;
@@ -43,6 +64,53 @@ h4 {
   margin-top: 70px;
 }
 
+.settings {
+  float: right;
+  width: 20px;
+  margin: 15px;
+}
+.profile {
+  float: left;
+  width: 20px;
+  margin: 15px;
+}
+
+/* dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  border-radius: 0.188rem;
+  background-color: #f1f1f1;
+  min-width: 6.25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 0.625rem 0.875rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: darkgrey;
+  color: black;
+}
+
+  /* show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* change background color of dropdown button when content is shown */
+  .dropdown:hover .dropbtn {
+    opacity: 0.5;
+  }
+
 .form {
   display: block;
   text-align: center;
@@ -51,7 +119,7 @@ h4 {
 }
 .label {
   padding-bottom: 5px;
-  padding-left: 20px;
+  padding-top: 15px;
   text-align: left;
   display: block;
   min-width: 75px;
@@ -64,6 +132,11 @@ h4 {
   padding-bottom: 5px;
   margin: 0 auto;
   text-align: left;
+}
+
+.profile4 {
+  margin: 20px auto;
+  padding-left: 30px;
 }
 
 .logo {
@@ -123,23 +196,31 @@ h4 {
   margin-top: 150px;
 }
 
+.upload {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.profile2 {
+  text-align: center;
+  margin: 10px auto;
+}
+
 .first-checkbox,
 .second-checkbox {
-  border-radius: 20px;
-  padding: 25px;
+  height: 45px;
+  padding: 10px;
   font-size: 20px;
-
+  width: 200px;
 }
 input[type="radio"] {
   visibility: hidden;
 }
 .checkbox-container {
-  width: 80%;
+  width: 170px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-around;
-  padding: 20px;
   margin: 20px auto;
   border: 1px solid white;
   border-radius: 20px
@@ -147,12 +228,17 @@ input[type="radio"] {
 input[type="radio"]:checked+label {
   border: 1px solid black;
   border-radius: 20px;
-  padding: 5px;
+  height: 45px;
+  padding: 10px;
+
 }
-/*.container {
-  text-align: center;
-  max-width: 360px;
-} */
+
+.profile3 {
+  padding-left: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .input-wrapper {
   margin: 10px auto;
   border: 2px solid black;
@@ -183,6 +269,13 @@ input[type="radio"]:checked+label {
   border: 1px solid black;
   margin-left: 20px;
   border-radius: 3px;
+  width: 290px;
+}
+
+.map {
+  max-width: 290px;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .error-message {
@@ -190,52 +283,23 @@ input[type="radio"]:checked+label {
   font-size: 0.8em;
   background-color: white;
 }
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-}
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-.modal h1 {
-  margin-top: 0;
-}
-.modal p {
-  margin-bottom: 0;
-}
-
-/*#offer-container {
-  display: none;
-}
-#offer-container.is-visible {
-  display: block;
-  width: 100%;
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  overflow: auto;
-  display: grid;
+#modal-body1,
+#modal-body2,
+#modal-body3,
+#modal-body4,
+#modal-body5 {
   text-align: center;
+  width: 300px;
+  margin: 60px 20px;
+  height: 550px;
 }
-*/
+
+.modal-img {
+  width: 100px;
+}
+.modal-img2 {
+  width: 200px;
+}
 
 .offers {
   width: 250px;
@@ -316,7 +380,7 @@ input[type="radio"]:checked+label {
   margin: 5px auto;
 }
 
-.rewards-button {
+#modal6 {
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -495,10 +559,10 @@ input[type="radio"]:checked+label {
   }
 
 .hours {
-  width: 100%;
+  width: 310px;
   background-color: lightgrey;
   color: black;
-  margin: 10px;
+  margin: 10px auto;
 }
 .hours h5 {
   padding-top: 15px;
@@ -519,7 +583,7 @@ input[type="radio"]:checked+label {
 
 /* device with borders */
 .smartphone {
-  position: relative;
+
   width: 360px;
   height: 640px;
   margin: auto;
@@ -551,9 +615,9 @@ input[type="radio"]:checked+label {
   display: block;
   width: 35px;
   height: 35px;
-  position: absolute;
+  position: relative;
   left: 50%;
-  bottom: -13%;
+  bottom: -4%;
   transform: translate(-50%, -50%);
   background: #333;
   border-radius: 50%;
@@ -583,11 +647,12 @@ input[type="radio"]:checked+label {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-direction: column;
   position: fixed;
-  bottom: 70px;
+  left: -340%;
+  bottom: -95%;
   margin: 0 auto;
   background-color: lightgrey;
   text-align: center;
-  width: 91.5%;
+  width: 350px;
   max-height: 70px;
   font-size: 15px;
   z-index: 100;

@@ -133,6 +133,17 @@ function offerContainer() {
   });
 })();
 
+// toggle between map and list view
+hidebutton.onclick = function() {
+  var div = document.getElementsByClassName('show').item(0);
+  if(div.style.display == '') {
+    div.style.display = 'none';
+  } else {
+    div.style.display = 'block';
+  }
+}
+
+
 // add map to search.html
 mapboxgl.accessToken = 'pk.eyJ1IjoibWh5bmVtYW4iLCJhIjoiY2ttYzdrZWM4Mjh3cDJwcXJ0dXp6dHZtdiJ9.51Y91GMZkjhaDhd02nRJqA';
 var map = new mapboxgl.Map({

@@ -19,9 +19,18 @@
     <div class="smartphone">
       <div class="content">
 
-        <img src="https://via.placeholder.com/30" alt="logo" class="logo">
-        <img src="https://via.placeholder.com/30" alt="menu" class="menu">
+        <img src="img/profile.png" alt="profile" class="profile">
 
+        <div class="dropdown">
+          <img src="img/settings.png" alt="settings" class="settings">
+          <div class="dropdown-content">
+            <a href="home.html">Switch to User</a>
+            <a href="#">Update Info</a>
+            <a href="#">Report User</a>
+            <a href="#">Help</a>
+            <a href="index.html">Logout</a>
+          </div> <!-- end of dropdown-content -->
+        </div><!-- end of dropdown -->
 
         <h2>Partnerships</h2>
 
@@ -29,15 +38,16 @@
 
         <button type="button" name="button">Filter icon</button>
         <!-- create model to change distance -->
-        <button class="map-view" type="button" name="map">map view</button>
+        <button id="toggle" class="map-view" type="button" name="map">map view</button>
         <button class="list-view" type="button" name="list">list view</button>
 
         <div class="find">
           <button id="geo">Find Me</button>
         </div>
         <!-- map -->
-        <img class="map" src="img/map.png" alt="">
-
+        <div id="map" class="map show">
+          <img class="map" src="img/map.png" alt="">
+        </div> <!-- end of map -->
         <div>
           <a href="profile.html" class="input-wrapper">
             <img src="https://via.placeholder.com/100" class="partner_img" alt="">
