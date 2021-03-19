@@ -7,47 +7,71 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-  <!-- add font here -->
-
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- add font here -->
+
 </head>
 
   <body>
     <div class="smartphone">
       <div class="content">
 
-        <img src="img/profile.png" alt="profile" class="profile">
+        <div class="back-header">
+          <div class="head">
+            <img src="img/profile.png" alt="profile" class="profile">
 
-        <div class="dropdown">
-          <img src="img/settings.png" alt="settings" class="settings">
-          <div class="dropdown-content">
-            <a href="home.html">Switch to User</a>
-            <a href="#">Update Info</a>
-            <a href="#">Report User</a>
-            <a href="#">Help</a>
-            <a href="index.html">Logout</a>
-          </div> <!-- end of dropdown-content -->
-        </div><!-- end of dropdown -->
+            <div class="dropdown">
+              <img src="img/settings.png" alt="settings" class="settings">
+              <div class="dropdown-content">
+                <a href="home.html">Switch to User</a>
+                <a href="#">Update Info</a>
+                <a href="#">Report User</a>
+                <a href="#">Help</a>
+                <a href="index.html">Logout</a>
+              </div> <!-- end of dropdown-content -->
+            </div><!-- end of dropdown -->
+          </div> <!-- end of head -->
 
-        <h2>Partnerships</h2>
+          <a href="partner.html">
+            <img src="img/back.png" class="back" alt="back button">
+          </a>
+          <h2 class="backh2">Partnerships</h2>
+        </div> <!-- end of back-header -->
 
-        <input class="form-input" type="text" name="search" value="" placeholder="Search">
+        <div class="container">
+          <input class="form-input" type="text" name="search" value="" placeholder="Search">
 
-        <button type="button" name="button">Filter icon</button>
+          <button type="button" class="filter" data-toggle="modal" data-target="#myModal7">
+            <img src="img/filter.png" class="filter" alt="filter">
+          </button>
+        </div>
+
         <!-- create model to change distance -->
-        <button id="toggle" class="map-view" type="button" name="map">map view</button>
-        <button class="list-view" type="button" name="list">list view</button>
+        <button id="toggle" class="view" type="button" name="map">
+          Map
+        </button>
+        <button class="view" type="button" name="list">
+          List
+        </button>
 
         <div class="find">
           <button id="geo">Find Me</button>
         </div>
+
         <!-- map -->
         <div id="map" class="map show">
           <img class="map" src="img/map.png" alt="">
         </div> <!-- end of map -->
+
         <div>
           <a href="profile.html" class="input-wrapper">
             <img src="https://via.placeholder.com/100" class="partner_img" alt="">
@@ -116,8 +140,63 @@
 
     </div>
   </div>
-    <script src="js/scripts.js"></script>
 
+  <!-- Modal 7 -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content" id="modal-body7">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+          Filters
+        </h4>
+        </div>
+        <div class="modal-body" >
+
+          <p>Distance</p>
+          <!-- range slider -->
+          <div class="slidecontainer">
+
+            <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+          </div>
+          <div>
+            <label class="rangeLeft" for="myRange">1 mi.</label>
+            <label class="rangeRight" for="myRange">10 mi.</label>
+          </div>
+
+          <form class="" action="index.html" method="post">
+            <p>Only Minority Owned Businesses</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider-round"></span>
+            </label>
+            <p>Only Women Owned Businesses</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider-round"></span>
+            </label>
+
+
+
+
+            </form>
+
+        <div class="modal-footer">
+          <button type="button" class="button" data-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="button" data-dismiss="modal">
+            Done
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div> <!-- end of modal fade -->
+    <script src="js/scripts.js"></script>
 
   </body>
 

@@ -133,15 +133,27 @@ function offerContainer() {
   });
 })();
 
-// toggle between map and list view
-hidebutton.onclick = function() {
-  var div = document.getElementsByClassName('show').item(0);
-  if(div.style.display == '') {
-    div.style.display = 'none';
-  } else {
-    div.style.display = 'block';
-  }
+// range sliders
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }
+
+
+// toggle between map and list view
+<input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
+<input type="checkbox" id="toggle-two">
+<script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+</script>
 
 
 // add map to search.html
