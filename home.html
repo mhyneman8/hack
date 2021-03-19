@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Business Home</title>
+  <title>Local First</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -20,7 +20,7 @@
         <div class="dropdown">
           <img src="img/settings.png" alt="settings" class="settings">
           <div class="dropdown-content">
-            <a href="home.html">Switch to User</a>
+            <a href="business-home.html">Switch to Business</a>
             <a href="#">Update Info</a>
             <a href="#">Report User</a>
             <a href="#">Help</a>
@@ -28,139 +28,70 @@
           </div> <!-- end of dropdown-content -->
         </div><!-- end of dropdown -->
       </div> <!-- end of head -->
-      
+
         <form >
-          <label for="business-type">What are you looking for?</label>
-          <select id="business-type" name="business-type">
+          <h4 class="home-header">
+            What are you looking for?
+          </h4>
+          <label class="types" for="business-type">
+            Type of Business
+          </label>
+          <select class="home-input" id="business-type" name="business-type">
             <option value="restaurants">Restaurants</option>
             <option value="hardware">Hardware Store</option>
             <option value="retail">Retail</option>
             <option value="explore">Explore my area</option>
           </select>
 
-          <select id="radius" name="radius">
+          <label class="types" for="radius">
+            Distance
+          </label>
+          <select class="home-input" id="radius" name="radius">
             <option value="0.5">0.5 Miles</option>
             <option value="1">1 miles</option>
             <option value="5">5 miles</option>
             <option value="10">10 miles</option>
           </select>
 
-          <input type="text" name="location" value="location" placeholder="zipcode or address">
+          <label class="types" for="location">
+            Where are you?
+          </label>
+          <input class="home-input" id="location" type="text" name="location" value="location" placeholder="zipcode or address">
         </form>
 
-        <a href="rewards2.html">
-          <div class="rewards">
-            <h3>Business 1</h3>
-            <p>Address</p>
-          </div>
-        </a>
-
-        <a href="rewards2.html">
-          <div class="rewards">
-            <h3>Name</h3>
-            <p>Exp on xx/xx/xxxx</p>
-          </div>
-        </a>
-
-        <h4>Completed Offers</h4>
-
-        <a href="rewards2.html">
-          <div class="rewards">
-            <h3>Name</h3>
-            <p>Exp on xx/xx/xxxx</p>
-          </div>
-        </a>
-
-        <a href="rewards2.html">
-          <div class="rewards">
-            <h3>Name</h3>
-            <p>Exp on xx/xx/xxxx</p>
-          </div>
-        </a>
-
-        <h4>Expired Offers</h4>
-
-        <a href="rewards2.html">
-          <div class="rewards">
-            <h3>Name</h3>
-            <p>Exp on xx/xx/xxxx</p>
-          </div>
-        </a>
 
         <div class="spacer"></div>
 
-      <footer class="footer">
-        <div class="nav">
-          <a href="business-home.html" >
-            <img src="https://via.placeholder.com/30" class="nav" alt="">
-            <h4 class="footer-text">Home</h4>
-          </a>
-        </div>
-        <div class="nav">
-          <a href="partner.html" >
-            <img src="https://via.placeholder.com/30" class="nav" alt="">
-            <h4 class="footer-text">Partner</h4>
-          </a>
-        </div>
+        <footer class="footer">
+          <div class="nav">
+            <a href="business-home.html" >
+              <img src="img/home.png" class="nav" alt="">
+              <h4 class="footer-text">Home</h4>
+            </a>
+          </div>
+          <div class="nav">
+            <a href="partner.html" >
+              <img src="img/partner.jpg" class="nav" alt="">
+              <h4 class="footer-text">Partner</h4>
+            </a>
+          </div>
 
-        <div class="nav">
-          <a href="messages.html" >
-            <img src="https://via.placeholder.com/30" class="nav" alt="">
-            <h4 class="footer-text">Messages</h4>
-          </a>
-        </div>
+          <div class="nav">
+            <a href="messages.html" >
+              <img src="img/messages.png" class="nav" alt="">
+              <h4 class="footer-text">Messages</h4>
+            </a>
+          </div>
 
-        <div class="nav">
-          <a href="#">
-            <img src="https://via.placeholder.com/30" class="nav" alt="">
-            <h4 class="footer-text">Offers</h4>
-          </a>
-        </div>
-      </footer>
+          <div class="nav">
+            <a href="#">
+              <img src="img/offers.png" class="nav" alt="">
+              <h4 class="footer-text">Offers</h4>
+            </a>
+          </div>
+        </footer>
     </div>
   </div>
 
 </body>
-</html>
-
-
-  <body>
-    <div class="rewards">
-      <a href="rewards.html">My rewards</a>
-    </div>
-    <div class="menu">
-      <a href="business-home.html">
-        Switch to Businesss Account
-      </a>
-      <a href="settings.html">
-        Settings
-      </a>
-    </div>
-
-    <form >
-      <label for="business-type">What are you looking for?</label>
-      <select id="business-type" name="business-type">
-        <option value="restaurants">Restaurants</option>
-        <option value="hardware">Hardware Store</option>
-        <option value="retail">Retail</option>
-        <option value="explore">Explore my area</option>
-      </select>
-
-      <select id="radius" name="radius">
-        <option value="0.5">0.5 Miles</option>
-        <option value="1">1 miles</option>
-        <option value="5">5 miles</option>
-        <option value="10">10 miles</option>
-      </select>
-
-      <input type="text" name="location" value="location" placeholder="zipcode or address">
-    </form>
-
-    <a href="locations.html" class="button">Find</a>
-
-
-    </main>
-    <script src="js/scripts.js"></script>
-  </body>
-
 </html>
