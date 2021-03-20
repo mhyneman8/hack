@@ -38,23 +38,23 @@
           </div><!-- end of dropdown -->
         </div> <!-- end of head -->
 
-        <h2>Partnerships</h2>
-
-        <div class="">
+        <h2 class="header">Partnerships</h2>
+        <img class="back" src="img/back.png" alt="">
+        <div class="brown">
           <h3>Inquiry Request</h3>
+        </div>
           <p class="request">Why do you want to partner with us?</p>
-          <textarea name="name" class="textarea" rows="3" cols="35"></textarea>
+          <textarea name="name" class="textarea" rows="2" cols="35"></textarea>
           <p class="request">What do you have to offer?</p>
-          <textarea name="name" class="textarea" rows="3" cols="35"></textarea>
+          <textarea name="name" class="textarea" rows="2" cols="35"></textarea>
           <p class="request">How soon are you ready to partner?</p>
-          <input type="text" class="textarea" name="time" value="date" placeholder="date">
+          <input type="text" class="form-input" id="date" name="time" value="date" placeholder="date">
           <label for="now" >Immediately</label>
           <input type="radio" name="now" value="now" id="now">
-        </div>
 
         <div class="container">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="offers" data-toggle="modal" data-target="#myModal4">
+          <button type="button" class="button-black" data-toggle="modal" data-target="#myModal4">
             Send
           </button>
 
@@ -69,14 +69,14 @@
                   <h4 class="modal-title">Success!</h4>
                 </div>
                 <div class="modal-body">
-                  <img src="https://via.placeholder.com/50" alt="">
+                  <img class="modal-img" src="img/check.png" alt="">
                   <p>We sent your request to ABC Company</p>
                   <p>Stay tuned for their response!</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <a href="business-home.HTML" class="button-black">
                     Close
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -91,27 +91,27 @@
           <div class="nav">
             <a href="business-home.html" >
               <img src="img/home.png" class="nav" alt="">
-              <h4 class="footer-text">Home</h4>
+              <h5 class="footer-text">Home</h5>
             </a>
           </div>
           <div class="nav">
             <a href="partner.html" >
               <img src="img/partner.jpg" class="nav" alt="">
-              <h4 class="footer-text">Partner</h4>
+              <h5 class="footer-text">Partner</h5>
             </a>
           </div>
 
           <div class="nav">
             <a href="messages.html" >
               <img src="img/messages.png" class="nav" alt="">
-              <h4 class="footer-text">Messages</h4>
+              <h5 class="footer-text">Messages</h5>
             </a>
           </div>
 
           <div class="nav">
-            <a href="#">
+            <a href="offers.html">
               <img src="img/offers.png" class="nav" alt="">
-              <h4 class="footer-text">Offers</h4>
+              <h5 class="footer-text">Promos</h5>
             </a>
           </div>
         </footer>

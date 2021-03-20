@@ -29,29 +29,39 @@
         </div><!-- end of dropdown -->
       </div> <!-- end of head -->
 
-        <h2 class="reward-head">Offers</h2>
-        <h4>My Offers</h4>
+        <h2 class="header">New Post</h2>
+        <img class="back" src="img/back.png" alt="">
 
-        <div class="rewards-card">
-          <h3 id="claimh3">Name of Card</h3>
-          <p class="edit">Exp on xx/xx/xx</p>
+        <div class="post1">
+          <img class="post_img" src="img/social.png" alt="">
+          <input type="text" name="" value="" placeholder="Write a caption...">
+        </div> <!-- end of post1 -->
 
-          <div class="rewards-claim">
-            <p>Name of Business</p>
-            <img src="https://via.placeholder.com/150" class="claim" alt="QR code">
-            <p class="button-empty">Scan QR code</p>
-          </div>
-
-
+        <div class="post2">
+          <h4>Tag people/partners</h4>
         </div>
 
-        <div class="rewards-card">
-          <h3 class="para">Prize Description</h3>
-          <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque enim quam, gravida id sodales nec, efficitur ac ante. </p>
-        </div>
+        <form class="form" action="index.html" method="post">
+          <h5 id="post3">Instagram</h5>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider-round"></span>
+          </label>
+          <h5 id="post4">Facebook</h5>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider-round"></span>
+          </label>
+          <h5 id="post5">Twitter</h5>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider-round"></span>
+          </label>
+        </form>
 
-
-
+        <button type="button" class="button-black" data-toggle="modal" data-target="#myModal9">
+          Share
+        </button>
 
         <div class="spacer"></div>
 
@@ -83,8 +93,33 @@
             </a>
           </div>
         </footer>
-    </div>
-  </div>
+
+
+        <!-- Modal 9 -->
+        <div class="modal fade" id="myModal9" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-body9">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                  Congrats! You just created your business promotion!
+                </h4>
+              </div>
+              <div class="modal-body">
+                <img class="modal-img" src="img/check.png" alt="">
+              </div>
+              <div class="modal-footer">
+                <a href="business-home.html" class="button-black">
+                  Close
+                </a>
+              </div>
+            </div>
+
+            </div>
+            </div> <!-- end of modal -->
+
 
 </body>
 </html>

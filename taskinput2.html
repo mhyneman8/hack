@@ -29,98 +29,73 @@
         </div><!-- end of dropdown -->
       </div> <!-- end of head -->
 
-        <h2 class="reward-head">Offers</h2>
+        <h2 class="header">Promos</h2>
+        <img class="back" src="img/back.png" alt="">
 
-        <div class="rewards-grid">
-          <div class="rewards-grid__item blue">
-            <p></p>
-          </div>
-          <div class="rewards-grid__item blue">
-            <p></p>
-          </div>
-          <div class="rewards-grid__item blue">
-            <p></p>
-          </div>
-          <div class="rewards-grid__item green">
-            <p></p>
-          </div>
-          <div class="rewards-grid__item green">
-            <p></p>
-          </div>
-          <div class="rewards-grid__item green">
-            <p></p>
+
+        <div class="grid">
+          <div class="rewards-grid__item">
+                <img class="grid-img" src="img/petali-dot.jpg" alt="">
           </div>
 
-          <div class="rewards-grid__item grey">
-            <p>Click to add</p>
+          <div class="rewards-grid__item">
+            <div class="">
+              <!-- trigger modal button -->
+              <button type="button" class="grid-button" data-toggle="modal" data-target="#myModal8" name="button">
+                Click to add
+              </button>
           </div>
-
-          <div class="rewards-grid__item grey">
-            <p>Click to add</p>
-          </div>
-
-
-
-            <div class="container" id="modal6">
-              <div class="rewards-grid__item grey">
-              <!-- Trigger the modal with a button -->
-                <button type="button" data-toggle="modal" data-target="#myModal6">
-                  Click to add
-                </button>
-              </div>
-              <!-- Modal -->
-              <div class="modal fade" id="myModal6" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Modal Header</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>Some text in the modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-
-              </div>
-            </div>
-
         </div>
+
+          <div class="rewards-grid__item">
+            <img class="grid-img" src="img/sofra-dot.jpg" alt="">
+          </div>
+
+          <div class="rewards-grid__item">
+            <img class="grid-img" src="img/petali-dot.jpg" alt="">
+          </div>
+
+          <div class="rewards-grid__item green">
+            <div class="">
+              <!-- trigger modal button -->
+              <button type="button" class="grid-button" data-toggle="modal" data-target="#myModal8" name="button">
+                Click to add
+              </button>
+            </div>
+          </div>
+
+          <div class="rewards-grid__item">
+            <img class="grid-img" src="img/sofra-dot.jpg" alt="">
+          </div>
+
+          <div class="rewards-grid__item">
+            <img class="grid-img" src="img/petali-dot.jpg" alt="">
+          </div>
+
+          <div class="rewards-grid__item">
+            <div class="">
+              <!-- trigger modal button -->
+              <button type="button" class="grid-button" data-toggle="modal" data-target="#myModal8" name="button">
+                Click to add
+              </button>
+            </div>
+          </div>
+
+          <div class="rewards-grid__item">
+            <img class="grid-img" src="img/sofra-dot.jpg" alt="">
+          </div>
+        </div> <!-- end of rewards-grid -->
 
 
         <!-- modal to submit-->
           <div class="container">
 
             <!-- Trigger the modal with a button -->
-            <button type="button" class="button" data-toggle="modal" data-target="#myModal5">Submit</button>
+            <button type="button" class="button-black" data-toggle="modal" data-target="#myModal6">
+              Submit
+            </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="myModal5" role="dialog">
-              <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Add description of task</h4>
-                  </div>
-                  <div class="modal-body">
-                    <p>Task</p>
-                    <textarea name="name" rows="5" cols="30"></textarea>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
+          </div> <!-- end of container -->
 
         <div class="spacer"></div>
 
@@ -128,32 +103,96 @@
           <div class="nav">
             <a href="business-home.html" >
               <img src="img/home.png" class="nav" alt="">
-              <h4 class="footer-text">Home</h4>
+              <h5 class="footer-text">Home</h5>
             </a>
           </div>
           <div class="nav">
             <a href="partner.html" >
               <img src="img/partner.jpg" class="nav" alt="">
-              <h4 class="footer-text">Partner</h4>
+              <h5 class="footer-text">Partner</h5>
             </a>
           </div>
 
           <div class="nav">
             <a href="messages.html" >
               <img src="img/messages.png" class="nav" alt="">
-              <h4 class="footer-text">Messages</h4>
+              <h5 class="footer-text">Messages</h5>
             </a>
           </div>
 
           <div class="nav">
-            <a href="#">
+            <a href="offers1.html">
               <img src="img/offers.png" class="nav" alt="">
-              <h4 class="footer-text">Offers</h4>
+              <h5 class="footer-text">Promos</h5>
             </a>
           </div>
         </footer>
-    </div>
-  </div>
+    </div> <!-- end of content -->
+  </div> <!-- end of smartphone -->
+
+  <!-- Modal 8 -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content -->
+      <div class="modal-content" id="modal-body8">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+            Add description of task
+          </h4>
+        </div>
+        <div class="modal-body">
+          <p>Task</p>
+          <textarea name="name" rows="5" cols="30"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-black" data-dismiss="modal">
+            Add
+          </button>
+        </div>
+      </div>
+
+      </div>
+      </div> <!-- end of modal -->
+
+      <!-- Modal 6 -->
+      <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content -->
+          <div class="modal-content" id="modal-body6">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">
+                Success!
+                <img src="img/check.jpg" alt="">
+              </h4>
+            </div>
+            <div class="modal-body">
+              <p>We sent <span>Petali Flowers</span> and <span>Sofra Bakery</span> your request to partner for <span>Valentines Day Special</span></p>
+              <p>Once they have inputted their tasks, your offer will go public</p>
+              <h6>Share to social</h6>
+              <a class="social-post" href="social.html">
+                <img src="#" alt="insta">
+              </a>
+              <a class="social-post" href="social.html">
+                <img src="#" alt="twitter">
+              </a>
+              <a class="social-post" href="social.html">
+                <img src="#" alt="fb">
+              </a>
+            </div>
+            <div class="modal-footer">
+              <a href="business-home.html" class="button-black">
+                Close
+              </a>
+            </div>
+          </div>
+
+          </div>
+          </div> <!-- end of modal -->
+
 
 </body>
 </html>
